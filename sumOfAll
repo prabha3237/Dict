@@ -1,0 +1,23 @@
+..
+ The program takes a dictionary and prints the sum of all the items in the dictionary.
+Problem Solution:
+1. Declare and initialize the n number of dictionary values from the user.
+2. Find the sum of all the values in the dictionary.
+3. Print the total sum.
+4. Exit.
+..
+my_dict = {}
+n = int(input("Enter the number of values: "))
+for _ in range(n):
+    value = int(input("Enter a value: "))
+    my_dict[len(my_dict) + 1] = value  # Use the length as the key
+total_sum = sum(my_dict.values())
+print("Total sum:", total_sum)
+..
+Sample Input:
+3
+100
+540
+239
+Sample Output :
+879
